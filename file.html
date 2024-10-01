@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Information</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #0056b3;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .product img {
+            width: 220px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .product img:hover {
+            transform: scale(1.05);
+        }
+
+        .product-details {
+            flex: 1;
+            margin-left: 30px;
+        }
+
+        .product-details h2 {
+            font-size: 1.8em;
+            color: #333;
+        }
+
+        .product-details p {
+            font-size: 1.1em;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .price {
+            font-size: 1.6em;
+            font-weight: bold;
+            color: #e60000;
+            margin-top: 10px;
+        }
+
+        .product:last-child {
+            border-bottom: none;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+
+        @media screen and (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .product img {
+                margin-bottom: 20px;
+            }
+
+            .product-details {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Product Information</h1>
+    </header>
+
+    <div class="container">
+        <!-- Product 1: Lenovo Laptop -->
+        <div class="product">
+            <img src="https://m.media-amazon.com/images/I/61UjxQh+aYL.jpg" alt="Lenovo Laptop">
+            <div class="product-details">
+                <h2>Lenovo IdeaPad Slim 5</h2>
+                <p>The Lenovo IdeaPad Slim 5 is a powerful and portable laptop, featuring the latest Intel Core i5 processor, 8GB RAM, and a 512GB SSD for high performance.</p>
+                <p class="price">₹ 55,999</p>
+            </div>
+        </div>
+
+        <!-- Product 2: Logitech Keyboard -->
+        <div class="product">
+            <img src="https://m.media-amazon.com/images/I/61pUul1oDlL._SL1500_.jpg" alt="Logitech Keyboard">
+            <div class="product-details">
+                <h2>Logitech K120 Wired Keyboard</h2>
+                <p>A durable and comfortable keyboard with a sleek design, perfect for everyday typing and productivity tasks.</p>
+                <p class="price">₹ 799</p>
+            </div>
+        </div>
+
+        <!-- Product 3: Acer Monitor -->
+        <div class="product">
+            <img src="https://m.media-amazon.com/images/I/81QpkIctqPL._SL1500_.jpg" alt="Acer Monitor">
+            <div class="product-details">
+                <h2>Acer 21.5 inch Full HD Monitor</h2>
+                <p>This Acer Full HD Monitor offers vibrant visuals and an ultra-slim design, making it perfect for work and entertainment.</p>
+                <p class="price">₹ 8,499</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Product Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
